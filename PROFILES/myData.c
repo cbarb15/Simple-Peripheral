@@ -106,21 +106,21 @@ static gattAttribute_t myDataAttrTbl[] =
   {
     { ATT_BT_UUID_SIZE, primaryServiceUUID },
     GATT_PERMIT_READ,
-    0,
+    5,
     (uint8_t *)&myDataDecl
   },
     // Data Characteristic Declaration
     {
       { ATT_BT_UUID_SIZE, characterUUID },
       GATT_PERMIT_READ,
-      0,
+      5,
       &myData_DataProps
     },
       // Data Characteristic Value
       {
         { ATT_UUID_SIZE, myData_DataUUID },
         GATT_PERMIT_READ,
-        0,
+        5,
         myData_DataVal
       },
 };

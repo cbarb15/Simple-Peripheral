@@ -84,7 +84,7 @@ Task_FuncPtr *myThread(void *arg0) {
         /* Blocking mode conversion */
         ADC_convert(adc, &adcValue);
         MyData_SetParameter(MYDATA_DATA_ID, MYDATA_DATA_LEN, &adcValue);
-        Display_printf(dispHandle, 6, 0, "ADC value: %d\n", adcValue);
+        Display_printf(dispHandle, 18, 0, "ADC value: %d\n", adcValue);
         Clock_start(clkHandle);
     }
 }
